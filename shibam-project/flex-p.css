@@ -1,0 +1,131 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+h1 {
+  font-family: "Playwrite Australia QLD", sans-serif;
+}
+
+/* Logo */
+#logo {
+  max-width: 12rem; /* Scales with screen */
+  height: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 0.125rem solid black;
+  background-color: rgb(229, 197, 156);
+}
+
+/* Main Container (Products Grid) */
+#main-cont {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(16rem, 1fr)
+  ); /* Responsive grid */
+  width: 90%;
+  margin: 0 auto;
+  place-items: center;
+  gap: 2rem;
+  background-color: navajowhite;
+  padding: 2rem;
+}
+
+/* Product Card */
+.product-card {
+  width: 100%;
+  max-width: 22rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.product-card h2,
+footer h2 {
+  font-size: 2rem;
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(229, 197, 156);
+  padding: 1.5rem;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+footer a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: azure;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-card h4 {
+    font-size: 1rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo {
+    max-width: 8rem;
+  }
+
+  .product-card h2 {
+    font-size: 1.5rem;
+  }
+
+  footer h2 {
+    font-size: 1.5rem;
+  }
+}

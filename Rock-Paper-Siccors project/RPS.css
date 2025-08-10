@@ -1,0 +1,89 @@
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+}
+
+#game-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: navy;
+}
+
+#computer-card {
+  background-color: rgb(177, 48, 48);
+  height: 400px;
+  width: 400px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#user-card {
+  background-color: rgb(177, 48, 48);
+  height: 400px;
+  width: 400px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#user-comp-card-cont {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+#user-comp-card-cont h2 {
+  font-size: 30px;
+}
+
+#user-comp-card-cont h3 {
+  font-size: 28px;
+}
+
+#buttons-cont {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  gap: 15px;
+}
+
+#scissors,
+#rock,
+#paper,
+#new-round-button,
+#submit-choice-button,
+#new-game-button {
+  height: 70px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#new-round-cont {
+  background-color: rgb(177, 48, 48);
+  height: 400px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#new-round-button {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}

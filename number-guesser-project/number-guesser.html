@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Guesser Lite</title>
+    <link rel="stylesheet" href="number-guesser.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Number Guesser Lite</h1>
+        <p class="subtitle">
+          Be closer to the secret number (0 to 9). Ties go to the human.
+        </p>
+      </header>
+
+      <section class="status">
+        <div class="card">
+          <h2>Round <span id="round-number">1</span></h2>
+          <p>Target: <span id="target-number" aria-live="polite">?</span></p>
+        </div>
+        <div class="scores">
+          <div class="card">
+            <h3>Computer</h3>
+            <p class="score"><span id="computer-score">0</span></p>
+            <p>Guess: <span id="computer-guess">?</span></p>
+          </div>
+          <div class="card">
+            <h3>You</h3>
+            <p class="score"><span id="human-score">0</span></p>
+            <label for="human-guess" class="sr-only">Your guess (0 TO 9)</label>
+            <div class="guess-input">
+              <button id="subtract" type="button" aria-label="Decrease">
+                −
+              </button>
+              <input
+                id="human-guess"
+                type="number"
+                min="0"
+                max="9"
+                value="0"
+                inputmode="numeric"
+              />
+              <button id="add" type="button" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="guess" class="btn primary">Make a Guess</button>
+        <button id="next-round" class="btn">Next Round</button>
+        <p id="result" class="result" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small
+        >Starter template. Add your own JavaScript in
+        <code>script.js</code>.</small
+      >
+    </footer>
+
+    <script src="number-guesser.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS.css" />
+  </head>
+  <body>
+    <div id="game-card">
+      <h1>Rock Paper Scissors</h1>
+
+      <div id="user-comp-card-cont">
+        <div id="computer-card">
+          <h2>Computer's Choice: <span id="computer-choice">?</span></h2>
+          <!-- <div id="buttons-cont">
+            <button id="scissors">Scissors</button>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+          </div> -->
+          <h3>Computer's Score: <span id="computer-score">0</span></h3>
+        </div>
+        <div id="new-round-cont">
+          <h2>Round <span id="round-number">1</span></h2>
+          <button id="new-game-button">New Game</button>
+          <button id="new-round-button">New Round</button>
+          <button id="submit-choice-button">Submit Choice</button>
+          <h2 id="winner"></h2>
+        </div>
+
+        <div id="user-card">
+          <h2>User's Choice: <span id="human-choice">?</span></h2>
+          <div id="buttons-cont">
+            <button id="scissors">Scissors</button>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+          </div>
+          <h3>Human's Score: <span id="human-score">0</span></h3>
+        </div>
+      </div>
+    </div>
+    <script src="RPS.js"></script>
+  </body>
+</html>
